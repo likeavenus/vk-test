@@ -15,40 +15,26 @@
   <body class="page">
     <div class="page__wrapper">
       <section class="deskWrapper">
-        <div class="taskDesk" data-desk="1">
-          <div class="taskDesk_box">
-            <div class="taskDesk_title"></div>
-            <ul class="task_list">
-              <!--li.task_item Пройти курс по React-->
-            </ul>
-            <form class="taskDesk_add_box emptyArea">
-              <button class="taskDesk_button_add add_task js-add-card" type="button">Добавить еще одну карточку</button>
-              <button class="taskDesk_button_add add_title js-add-column" type="button">Добавить еще одну колонку</button>
-              <textarea class="taskDesk_area js-task-area" name="area" placeholder="Введите название карточки"></textarea>
-              <button class="taskDesk_button_save" type="button">Добавить карточку</button>
-              <button class="taskDesk_button_close" type="button"></button>
-              <input class="taskDesk_input js-task-input" type="text" name="title" placeholder="Добавить заголовок"/>
-              <button class="taskDesk_save_title js-save-title" type="button">Сохранить заголовок</button>
-            </form>
+        <template class="js-template">
+          <div class="taskDesk">
+            <button class="taskDesk_delete js-del-column" type="button"></button>
+            <div class="taskDesk_box">
+              <h3 class="taskDesk_title"></h3>
+              <ul class="task_list">
+                <!--li.task_item Пройти курс по React-->
+              </ul>
+              <form class="taskDesk_add_box emptyArea">
+                <button class="taskDesk_button_add add_task js-add-card" type="button">Добавить еще одну карточку</button>
+                <button class="taskDesk_button_add add_title js-add-column" type="button">Добавить еще одну колонку</button>
+                <textarea class="taskDesk_area js-task-area" name="area" placeholder="Введите название карточки"></textarea>
+                <button class="taskDesk_button_save" type="button">Добавить карточку</button>
+                <button class="taskDesk_button_close js-close" type="button"></button>
+                <input class="taskDesk_input js-task-input" type="text" name="title" placeholder="Добавить заголовок"/>
+                <button class="taskDesk_save_title js-save-title" type="button">Сохранить заголовок</button>
+              </form>
+            </div>
           </div>
-        </div>
-        <div class="taskDesk" data-desk="1">
-          <div class="taskDesk_box">
-            <div class="taskDesk_title"></div>
-            <ul class="task_list">
-              <!--li.task_item Пройти курс по React-->
-            </ul>
-            <form class="taskDesk_add_box emptyArea">
-              <button class="taskDesk_button_add add_task js-add-card" type="button">Добавить еще одну карточку</button>
-              <button class="taskDesk_button_add add_title js-add-column" type="button">Добавить еще одну колонку</button>
-              <textarea class="taskDesk_area js-task-area" name="area" placeholder="Введите название карточки"></textarea>
-              <button class="taskDesk_button_save" type="button">Добавить карточку</button>
-              <button class="taskDesk_button_close" type="button"></button>
-              <input class="taskDesk_input js-task-input" type="text" name="title" placeholder="Добавить заголовок"/>
-              <button class="taskDesk_save_title js-save-title" type="button">Сохранить заголовок</button>
-            </form>
-          </div>
-        </div>
+        </template>
       </section>
     </div>
     <div class="beforeBodyEnd" style="display: none">
